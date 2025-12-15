@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/cpp_mini_jvm.dir/src/main.cpp.o -o cpp_mini_jvm 

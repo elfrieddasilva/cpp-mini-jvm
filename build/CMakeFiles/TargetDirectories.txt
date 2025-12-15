@@ -1,0 +1,3 @@
+/home/elfried-amir/Documents/cpp-mini-jvm/build/CMakeFiles/cpp_mini_jvm.dir
+/home/elfried-amir/Documents/cpp-mini-jvm/build/CMakeFiles/edit_cache.dir
+/home/elfried-amir/Documents/cpp-mini-jvm/build/CMakeFiles/rebuild_cache.dir
