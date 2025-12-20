@@ -35,10 +35,10 @@ struct ByteReader {
 
 
 int main() {
-    std::ifstream file("test.bin", std::ios::binary);
+    std::ifstream file("Test.class", std::ios::binary);
 
     if (!file) {
-        std::cerr << "Failed to open file\n";
+        std::cerr << "Failed to open file Test.class\n";
         return 1;
     }
 
@@ -52,8 +52,13 @@ int main() {
     uint16_t minor = reader.readU2();
     uint16_t major = reader.readU2();
 
+    if (magic != 0xCAFEBABE) {
+        throw std::runtime_error("Not a valid class file");
+    }
+
     std::cout << std::hex;
     std::cout << "magic: 0x" << magic << "\n";
+    std::cout << std::dec;
     std::cout << "minor: " << minor << "\n";
     std::cout << "major: " << major << "\n";
 
